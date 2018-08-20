@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div {
+    width: 100%;
+    height: 10px;
+    background-color: dark-grey;
+    margin: 10px 0;
+    margin-top:0vw;
+}
+* {box-sizing: border-box;}
+
+
+
+.topnav .search-container {
+  float: center;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 1.5vw;
+  font-size: 17px;
+  border: none;
+  color: lightgray;
+  background-color: #282828;
+}
+
+.topnav .search-container button {
+  float: left;
+  padding: 7.2px 8px;
+  margin-top: 8px;
+  width:10%;
+  color: lightgray;
+  margin-top: 1.5vw;
+  margin-left: 1vw;
+  background: #282828;
+  font-size: 15.4px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+    
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    
+    margin: 0;
+    padding: 16px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+#ip button:hover{
+    background:none;
+}
+</style>
+</head>
+<body>
+<div class="w3-sidebar w3-bar-block w3-small" style="width:5%;background-color: #1a1a1a;">
+  <a href="#" class="w3-bar-item w3-button w3-xxlarge  w3-border-bottom w3-border-dark-grey w3-center" style="color:grey;margin-top: 0.1vw;"><i class="fa fa-bars"></i></a> 
+  <img  src="whatsapp3.png" class="w3-button" alt="" style="width:5vw;align-self: stretch;" onclick="openBar1()"><br>
+  <img src="gmail.png" class="w3-button" alt="hai" style="width:5vw;" align="middle" onclick="closeBar1()"><br>
+  <img src="skype.png" class="w3-button" alt="hai" style="width:5vw;"><br>  
+  <img src="slack1.png" class="w3-button" alt="hai" style="width:5vw;margin-left:0vw;"><br>
+   <button class="w3-button w3-xlarge w3-black"style="margin-left:0.6vw;margin-top:0.8vw;">+</button>
+</div>
+<div id="mybar1" class="w3-sidebar w3-bar-block"style="transition-timing-function: ease-out;transition: width 1s;width:0%;margin-left:5%;background-color: #282828;">
+      <p class="w3-text-light-grey" style="font-size:1.41vw;margin-top:2vw;margin-left:0.5vw;margin-right: 0.5vw">Inbox<img src="contact.png"class="w3-square w3-button w3-dark-grey" style="float:right;width:17%;height:2.2vw;margin-top:-0.5vw;border-radius:4px;"></p>  
+      <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey" style="margin-top: -1.89vw;"></a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;margin-top: 1.5vw;float:left;border-radius:4px;">All</a><p class="w3-text-white" style="float:right;margin-top: -1.9vw;margin-right: 0.5vw;">88</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;margin-top: 0.1vw;float:left;border-radius:4px;" onclick="openBar2()">Messages</a><p class="w3-text-white" style="float:right;margin-right: 0.5vw;margin-top: -2.1vw;">11</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;margin-top: 0.5vw;border-radius:4px;">Unread</a><p class="w3-text-white" style="float:right;margin-top: -2vw;margin-right: 1vw;">4</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Important</a><p class="w3-text-white" style="float:right;margin-top: -2vw;margin-right: 1vw;">1</p>
+      <br>
+      <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey" style="margin-left:0vw;"></a>
+      <br>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Teams</a><p class="w3-text-white" style="float:right;margin-top: -2vw;margin-right: 1vw;">2</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Groups</a><p class="w3-text-white" style="float:right;margin-top: -2vw;margin-right: 1vw;">4</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Channels</a><p class="w3-text-white" style="float:right;margin-top: -2vw;margin-right: 1vw;">2</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Locations</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;margin-top: 0.7vw;">Media</a><p class="w3-text-white" style="float:right;margin-top: -2.1vw;margin-right: 1vw;">87</p>
+      <br>
+      <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey"style="margin-left: 0vw;"></a>
+      <br>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Help</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-text-light-grey w3-text-light-grey"style="width:100%;border-radius:4px;">Settings</a>
+</div>
+<div id="mybar2" class="w3-sidebar w3-bar-block" style="transition-timing-function: ease-out;transition: width 1s;width:0%;margin-left:25%;background-color: #333333;">
+        <div class="topnav">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                     <button type="submit"><i class="fa fa-search"></i></button>
+                     <input type="text" placeholder="Search.." name="search">
+                    </form>
+                </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey"style="margin-top:2.91vw;"></a>
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;">
+        <h class="w3-text-white " style="margin-left: -26.4vw;font-size:0.9vw;">Michelle</h>
+        <img src="p1.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="font-size: 0.9vw;margin-left: 0.3vw;margin-top:2vw;float:left;">Can you send me the details..</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div>
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;" onclick="openBar3()">
+        <h class="w3-text-white " style="margin-left: -21vw;font-size:0.9vw;">Matt</h>
+        <img src="p2.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="margin-left: 0.4vw;margin-top: 2vw;font-size: 0.9vw;float:left;">Busy typing...</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div>
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;">
+        <h class="w3-text-white " style="margin-left: -20vw;font-size:0.9vw;;">Justin</h>
+        <img src="p3.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="margin-left: 0.5vw;margin-top: 2vw;font-size: 0.9vw;float:left;">see you later.</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div>  
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;">
+        <h class="w3-text-white " style="margin-left: -19.3vw;font-size:0.9vw;;">Emile</h>
+        <img src="p5.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="margin-left: 0.4vw;margin-top: 2vw;font-size: 0.9vw;float:left;">Good bye...</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div> 
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;">
+        <h class="w3-text-white " style="margin-left: -22.5vw;font-size:0.9vw;;">Grant</h>
+        <img src="p6.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="margin-left: 0.4vw;margin-top: 2vw;font-size: 0.9vw;float:left;">I am in meeting...</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div>
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;">
+        <h class="w3-text-white " style="margin-left: -21.9vw;font-size:0.9vw;;">Elize</h>
+        <img src="p2.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="margin-left: 0.4vw;margin-top: 2vw;font-size: 0.9vw;float:left;">Have a nice day.</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div>
+    <div class="w3-button  w3-hover-text-light-grey"style="width:100%;height:5vw;background-color: #333333;">
+        <h class="w3-text-white " style="margin-left: -23.6vw;font-size:0.9vw;;">Luke</h>
+        <img src="p3.jpg" class="w3-circle w3-text-white " style="width:15%;height:90%;float:left;margin-top:0.1vw;">
+        <p class="w3-text-white " style="margin-left: 0.4vw;margin-top: 2vw;font-size: 0.9vw;float:left;">Meeting in  45mins...</p>
+        <img src="more.png" class=" w3-none" style="float:right;margin-right: 0.3vw;width:10%;border-radius:4px;">
+    </div>
+</div>
+<div id="mybar3" class="w3-sidebar w3-bar-block"style="transition-timing-function: ease-out;transition: width 1s;width:0%;margin-left:50%;background-color: #b3b3b3;">  
+    <p style="float:left;font-size:1vw;"><h style="font-size:1.5vw;">Matt</h> is typing..
+    <img src="video.svg" class="w3-white w3-button w3-light-grey" style="float:right;width:12%;margin-right: 0.5vw;border-radius:4px;">
+    <img src="call.svg" class="w3-light-grey w3-button" style="float:right;width:12%;margin-right:1vw;border-radius:4px;">
+    <img src="fv.png" class="w3-light-grey w3-button" style="float:right;width:12%;margin-right:1.5vw;border-radius:4px;">
+    </p>
+    <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey"style="margin-top:3.65vw;"></a>
+    <div>
+        <img src="p1.jpg" class="w3-circle" style="width:10%;float:left;margin-left:0.5vw;margin-top:-0.5vw;">
+        <p class="w3-card-body w3-white " style="font-size:1vw;width:75%;height:3vw;margin-left:15%;margin-top:2vw;border-radius:4px;padding-left: 0.5vw">Jo what's a chill nice movie I can go watch with my mom</p>
+        <p style="float:left;margin-left: 0.7vw;margin-top:-0.9vw;font-size: 0.8vw;">14:32<b></b></p>
+    </div>
+     <div>
+        <img src="p3.jpg" class="w3-circle" style="width:9%;height:500%;float:right;margin-right:0.5vw;">
+        <p class="w3-card-body w3-green" style="font-size:1vw;width:75%;height:3vw;margin-left:10%;margin-top:4.5vw;border-radius:4px;padding-left: 0.5vw">Well there's a few showing at the moment.</p>
+        <p style="float:right;margin-right:0.7vw;font-size:0.8vw;margin-top: -0.7vw;">14:34</p>
+    </div>
+    <div>
+        <img src="p1.jpg" class="w3-circle" style="width:9%;float:left;margin-left:0.5vw;">
+        <p class="w3-card-body w3-white " style="font-size:1vw;width:75%;height:3vw;margin-left:15%;margin-top:4.6vw;border-radius:4px;padding-left: 0.5vw">Yeah man that should be fine.</p>
+        <p style="float: left;margin-top:-0.8vw;margin-left:0.5vw;font-size:0.8vw;">14:36</p>
+    </div>
+    <div>
+        <img src="p3.jpg" class="w3-circle" style="width:10%;height:500%;float:right;margin-right:0.5vw;">
+        <p class="w3-card-body w3-green" style="font-size:1vw;width:75%;height:3vw;margin-left:10%;margin-top:4.5vw;border-radius:4px;padding-left: 0.5vw">Okay great.Don't watch the trailer.It will spoil the movie for you.</p>
+        <p style="font-size:0.8vw;float:right;margin-right:0.7vw;margin-top:-0.8vw;">14:38</p>
+    </div>
+   
+    <div class="w3-container w3-button w3-white" id="ip" style="margin-bottom:0.1vw;width:100%;height:8.6%;margin-top:19.5vw;">
+        <p style="float:left;font-size:1vw;">
+         <img src="att.svg" class="w3-light-grey w3-button" style="float:left;width:14%;margin-left: 0.3vw;margin-top:-0.4vw;">Type your message..
+         <img src="send.png" class=" w3-circle w3-button w3-green w3-button-hover-none" style="float:right;width:13%;margin-right:0.5vw;margin-top:-0.3vw;">
+         <img src="emoji3.png" class="w3-light-grey w3-button w3-square" style="float:right;width:15%;margin-right:1vw;margin-top:-0.5vw;border-radius:4px;">
+        </p>
+    </div>
+</div>
+<div id="mybar4" class="w3-sidebar w3-bar-block" style="transition-timing-function: ease-out;transition: width 1s;width:0%;margin-left:80%;background-color: white;"> 
+    <p><img src="bell.png" class="w3-button w3-light-grey" style="float:left;margin-left:0.5vw;margin-top:-0.1vw;width:17%;border-radius:4px;">  </p>
+    <div class="w3-dropdown-hover"style="float:right;margin-right:1vw;margin-top:-0.1vw;">
+      
+       <button class="w3-button w3-light-grey"style="border-radius:4px;float:right;width:40%;margin-top: -2.5vw;">Johan Harn v</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="border-radius:4px;">
+           <a href="#" class="w3-bar-item w3-button" style="margin-left:12vw;width:40%;">Profile</a>
+           <a href="#" class="w3-bar-item w3-button" style="margin-left:12vw;width:40%;">Settings</a>
+           <a href="#" class="w3-bar-item w3-button" style="margin-left: 12vw;width:40%;">Log out</a>
+        </div>
+    </div>
+    <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey"style="margin-top:3.62vw;"></a>
+    <p>
+     <img src="mail.png" class="w3-button w3-white" style="float:left;margin-left:0.5vw;width:20%;border-radius:4px;">
+     <img src="more.png" class="w3-button w3-white" style="float:right;margin-right: 0.5vw;width:18%;border-radius:4px;">
+    </p>
+    <img src="p1.jpg"  style="width:30%;border-radius:4px;margin-top: 4vw;margin-right: 2vw;margin-left: 2.5vw;">
+    <h style="font-size: 1.5vw;margin-left: 3.4vw;margin-top: :10vw;"> <b>Matt Thompson</b></h>
+    <p style="margin-left: 5.9vw;font-size: 1vw;margin-top: 0.6vw;">Cape Town,RSA</p>
+    <a href="#" class="w3-bar-item w3-border-bottom w3-border-dark-grey"style="margin-top: 1.5vw;"></a>
+    <div>
+        <p style="font-size:1vw;float:left;margin-left: 0.5vw;">Nickname:</p>
+        <p style="font-size:1vw;float:right;margin-right: 0.5vw;">Triple T</p>
+    </div>
+   <div>
+        <p style="font-size:1vw;float:left;margin-left: -5.4vw;margin-top: 2vw;">Tel:</p>
+        <p style="font-size:1vw;float:right;margin-right: -3.55vw;margin-top: 2vw;">021 88 237 8890</p>
+    </div>
+     <div>
+        <p style="font-size:1vw;float:left;margin-left: -5.4vw;margin-top: 3vw;">Date of Birth:</p>
+        <p style="font-size:1vw;float:right;margin-right: 0.5vw;margin-top: -0.3vw;">jun 20 1983</p>
+    </div>
+    <div>
+        <p style="font-size:1vw;float:left;margin-left: -6.9vw;margin-top: 2vw;">Gender:</p>
+        <p style="font-size:1vw;float:right;margin-right: -6vw;margin-top: 1.8vw;">Male</p>
+    </div>
+    <div>
+        <p style="font-size:1vw;float:left;margin-left: -6.8vw;margin-top: 4vw;">Language:</p>
+        <p style="font-size:1vw;float:right;margin-right: -6vw;margin-top: 4.1vw;">English</p>
+    </div>
+</div>
+<script>
+function openBar1()
+{
+    document.getElementById("mybar1").style.width="20%";
+}
+function openBar2()
+{
+    document.getElementById("mybar2").style.width="25%";
+}
+function openBar3()
+{
+    document.getElementById("mybar3").style.width="30%";
+     openBar4();
+}
+function openBar4()
+{
+    document.getElementById("mybar4").style.width="20%";
+}
+function closeBar1()
+{
+    document.getElementById("mybar1").style.width="0%";
+    document.getElementById("mybar2").style.width="0%";
+    document.getElementById("mybar3").style.width="0%";
+    document.getElementById("mybar4").style.width="0%";
+}
+</script>
+</body>
+</html>
